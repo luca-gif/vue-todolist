@@ -1,0 +1,51 @@
+.container {
+    width: 90%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif margin: 0 auto;
+}
+
+.container .title {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container .row {
+    text-align: center;
+}
+
+.container .row input {
+    width: 220px;
+    padding: 5px;
+}
+
+.container .row button {
+    padding: 5px 10px;
+}
+
+.container .list {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.list ul {
+    list-style: none;
+}
+
+.list ul li {
+    background-color: rgb(198, 198, 198);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.list i {
+    cursor: pointer;
+}
+
+.list ul li:hover {
+    background-color: rgb(227, 227, 227);
+}
+
+.barred {
+    text-decoration: line-through;
+}
