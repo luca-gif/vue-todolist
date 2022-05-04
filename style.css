@@ -36,6 +36,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    cursor: default;
 }
 
 .list i {
@@ -48,4 +49,8 @@
 
 .barred {
     text-decoration: line-through;
+}
+
+.pointer {
+    cursor: pointer;
 }

@@ -4,7 +4,7 @@ const root = new Vue({
     data: {
         items: [{
                 text: "Fare i compiti",
-                done: true,
+                done: false,
             },
             {
                 text: "Fare la spesa",
@@ -30,7 +30,9 @@ const root = new Vue({
                 done: false,
             };
 
-            this.items.push(newObj);
+            if (newTodo.length > 2) {
+                this.items.push(newObj);
+            }
         },
     },
 });

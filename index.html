@@ -29,8 +29,7 @@
         <div class="list">
 
             <ul>
-                <li v-for="(item, index) in items" :class="{'barred': items[index].done}">
-
+                <li v-for="(item, index) in items" @click="item.done = !item.done" :class="{'barred': items[index].done}">
                     {{items[index].text}}
 
                     <i @click="rimuoviTodo(index)" class="fa-solid fa-trash-can">
