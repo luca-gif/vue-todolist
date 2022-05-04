@@ -16,4 +16,12 @@ const root = new Vue({
             },
         ],
     },
+
+    methods: {
+        rimuoviTodo(index) {
+            console.log(index);
+            this.items.splice(index, 1);
+            console.log(this.items);
+        },
+    },
 });

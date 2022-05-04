@@ -21,18 +21,22 @@
         </div>
 
         <div class="row">
-            <input type="text" placeholder="Inserisci ToDoList...">
-            <button class="btn">Aggiungi</button>
+            <input type="text" placeholder="Inserisci cose da fare...">
+            <button>Aggiungi</button>
         </div>
 
         <div class="list">
+
             <ul>
                 <li v-for="(item, index) in items" :class="{'barred': items[index].done}">
+
                     {{items[index].text}}
-                    <i class="fa-solid fa-trash-can"></i>
+
+                    <i @click="rimuoviTodo(index)" class="fa-solid fa-trash-can">
+
+                    </i>
                 </li>
             </ul>
-
 
         </div>
     </div>
