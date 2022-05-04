@@ -15,13 +15,22 @@ const root = new Vue({
                 done: false,
             },
         ],
+
+        newTodo: "",
     },
 
     methods: {
         rimuoviTodo(index) {
-            console.log(index);
             this.items.splice(index, 1);
-            console.log(this.items);
+        },
+
+        aggiungiTodo(newTodo) {
+            const newObj = {
+                text: newTodo,
+                done: false,
+            };
+
+            this.items.push(newObj);
         },
     },
 });

@@ -21,9 +21,10 @@
         </div>
 
         <div class="row">
-            <input type="text" placeholder="Inserisci cose da fare...">
-            <button>Aggiungi</button>
+            <input v-model.trim="newTodo" type="text" placeholder="Inserisci cose da fare...">
+            <button @click="aggiungiTodo(newTodo)">Aggiungi</button>
         </div>
+
 
         <div class="list">
 
