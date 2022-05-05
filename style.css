@@ -1,6 +1,7 @@
 .container {
     width: 90%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto;
 }
 
 .container .title {
@@ -32,11 +33,11 @@
 }
 
 .list ul li {
-    background-color: rgb(198, 198, 198);
     display: flex;
     justify-content: space-between;
     padding: 10px;
     cursor: default;
+    background-color: rgb(228, 228, 228);
 }
 
 .list i {
@@ -49,8 +50,4 @@
 
 .barred {
     text-decoration: line-through;
-}
-
-.pointer {
-    cursor: pointer;
 }

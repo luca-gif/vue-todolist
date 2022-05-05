@@ -21,7 +21,9 @@ const root = new Vue({
 
     methods: {
         rimuoviTodo(index) {
-            this.items.splice(index, 1);
+            if (confirm(`Vuoi davvero eliminarlo?`)) {
+                this.items.splice(index, 1);
+            }
         },
 
         aggiungiTodo(newTodo) {
